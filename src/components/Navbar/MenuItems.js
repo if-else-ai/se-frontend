@@ -24,4 +24,9 @@ export const MenuItems = [
     url: "/Tools",
     cName: "nav-links",
   },
+  {
+    title: "Login",
+    url: "/Login",
+    cName: "nav-links",
+  },
 ];

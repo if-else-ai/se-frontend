@@ -11,7 +11,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="NavbarItems">
+		<nav className="nav-bar__items">
 			<a href="/" className="navbar-logo">
 				<h1>
 					<i className="fas fa-dna"></i> Kibby

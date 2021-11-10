@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-
 import Home from "./pages/Home";
 import Footer from "./components/Footer/Footer";
 
@@ -26,6 +25,9 @@ function App() {
 						<Home />
 					</Route>
 					<Route path="/Tools">
+						<Home />
+					</Route>
+					<Route path="/Login">
 						<Home />
 					</Route>
 				</div>

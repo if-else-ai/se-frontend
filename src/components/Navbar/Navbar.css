@@ -1,11 +1,14 @@
-.NavbarItems {
+.nav-bar__items {
   background: linear-gradient(
     90deg,
     rgb(40, 64, 204) 20%,
     rgb(77, 118, 255) 100%
   );
+  width: auto;
   height: 60px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
@@ -15,7 +18,7 @@
 .navbar-logo {
   color: #fff;
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 10rem;
   text-decoration: none;
   cursor: pointer;
 }
@@ -26,14 +29,14 @@
 }
 
 .nav-menu {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   list-style: none;
   text-align: center;
-  width: 70vw;
+  width: 100%;
   justify-content: end;
-  margin-right: 2rem;
+  margin-right: 10rem;
 }
 
 .nav-links {
