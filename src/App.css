@@ -13,5 +13,8 @@
   height: max-content;
 }
 
+.page-container {
+  min-height: 60rem;
+}
 
 
