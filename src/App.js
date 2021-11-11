@@ -8,6 +8,7 @@ import Customize from "./pages/Customize"
 import Accesories from "./pages/Accesories"
 import Tools from "./pages/Tools"
 import Login from "./pages/Login"
+import Cart from "./pages/Cart"
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -34,6 +35,9 @@ function App() {
 					</Route>
 					<Route path="/Login">
 						<Login />
+					</Route>
+					<Route path="/Cart">
+						<Cart />
 					</Route>
 				</div>
 				<Footer />
