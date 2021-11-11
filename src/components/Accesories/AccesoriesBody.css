@@ -1,0 +1,39 @@
+.accessory{
+    display: block;
+    border-color: black;
+}
+
+.accessory-category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 20rem;
+    justify-content: center;
+    align-content: center;
+    max-width: 200rem;
+    max-height: 200rem;
+}
+
+.category__image{
+    width: 30%;
+    padding: 30px;
+}
+
+.category__image img{
+    width: 500px;
+    height: 300px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.category__list{
+    width: 20%;
+    padding-left: 16px;
+    align-self: center;
+}
+
+.category__list li{
+    list-style: none;
+    cursor: pointer;
+}
+
