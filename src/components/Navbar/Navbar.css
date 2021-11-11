@@ -1,8 +1,8 @@
 .nav-bar__items {
   background: linear-gradient(
     90deg,
-    rgb(40, 64, 204) 20%,
-    rgb(77, 118, 255) 100%
+    rgb(48, 48, 63) 20%,
+    rgb(17, 23, 34) 100%
   );
   width: auto;
   height: 60px;
