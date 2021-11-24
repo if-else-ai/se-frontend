@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Add, Remove } from "@material-ui/icons";
 
 
 const Wrapper = styled.div`
@@ -86,8 +87,6 @@ justify-content: center;
 const ProductAmountContainer = styled.div``;
 const ProductAmount = styled.div``;
 const ProductPrice = styled.div``;
-const Add = styled.div``;
-const Remove = styled.div``;
 const Summary = styled.div`
 flex: 1;
 `;
@@ -110,7 +109,6 @@ const Cart = () => {
           <Info>
           <Product>
             <ProductDetail>
-
               <Image src= "https://assets.ajio.com/medias/sys_master/root/20210403/TCIf/6068daf77cdb8c1f147d2662/-473Wx593H-461866963-blue-MODEL.jpg"/>
               <Details>
                 <ProductName><b>Product:</b> CUTE BOY</ProductName>
