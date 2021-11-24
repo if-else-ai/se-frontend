@@ -29,4 +29,9 @@ export const MenuItems = [
     url: "/Login",
     cName: "nav-links",
   },
+  {
+    title: "Cart",
+    url: "/Cart",
+    cName: "nav-links",
+  },
 ];
