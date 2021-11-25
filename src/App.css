@@ -5,7 +5,6 @@
   font-family: "Prompt", sans-serif;
 }
 
-
 .App {
   background-color: #e9ecef;
   height: 100vh;
@@ -14,7 +13,12 @@
 }
 
 .page-container {
-  min-height: 60rem;
+  /* min-height: 60rem; */
+  min-height: 100vh;
 }
 
-
+.user-Profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

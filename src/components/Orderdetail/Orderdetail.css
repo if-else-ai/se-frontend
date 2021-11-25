@@ -1,0 +1,26 @@
+.orderdetail-container {
+  padding: 5vmin;
+  padding-left: 10vmin;
+  padding-right: 10vmin;
+  width: 80vw;
+  height: 100vh;
+  background-color: rgb(217, 255, 0);
+}
+
+.orderdetail-card {
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: blueviolet;
+  height: auto;
+  background-color: white;
+}
+
+.order {
+  border: 2px;
+  border-color: blue;
+  border-radius: 5px;
+  border-style: dashed;
+  padding: 20px;
+  margin-top: 10px;
+}

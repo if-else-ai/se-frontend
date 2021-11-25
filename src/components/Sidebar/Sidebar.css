@@ -1,0 +1,18 @@
+.sidebar-container {
+  padding: 5vmin;
+  margin: 1;
+  width: 20vw;
+  height: 100vh;
+  background-color: aqua;
+}
+
+.sidebar-card {
+  height: auto;
+  background-color: white;
+}
+
+.sidebar-link {
+  display: flex;
+  color: rgb(160, 214, 13);
+  text-decoration: none; /* no underline */
+}
