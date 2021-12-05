@@ -84,12 +84,60 @@ align-items: center;
 justify-content: center;
 `;
 
-const ProductAmountContainer = styled.div``;
-const ProductAmount = styled.div``;
-const ProductPrice = styled.div``;
+const ProductAmountContainer = styled.div`
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+`;
+
+const ProductAmount = styled.div`
+font-size: 24px;
+margin: 5px;
+`;
+
+const ProductPrice = styled.div`
+font-size: 30px;
+font-weight: 200;
+`;
+
+const Hr = styled.hr`
+background-color: lightgray; 
+border: none;
+height: 1px;
+`;
+
 const Summary = styled.div`
 flex: 1;
+border: 0.5px solid lightgray;
+border-radius: 10px;
+padding: 20px;
+height: 50vh;
 `;
+
+const SummaryTitle = styled.h1`
+font-weight: 200;
+`;
+
+const SummaryItem = styled.div`
+margin: 30px 0px;
+display: flex;
+justify-content: space-between;
+font-weight: ${props=>props.type === "total" && "500"};
+font-size: ${props=>props.type === "total" && "24px"};
+`;
+
+const SummaryItemPrice = styled.span``;
+
+const SummaryItemText = styled.span``;
+
+const Button = styled.button`
+width: 100%;
+padding: 10px;
+background-color: black;
+color: white;
+font-weigth: 600; 
+`;
+
 
 const Cart = () => {
   return (
@@ -109,7 +157,7 @@ const Cart = () => {
           <Info>
           <Product>
             <ProductDetail>
-              <Image src= "https://assets.ajio.com/medias/sys_master/root/20210403/TCIf/6068daf77cdb8c1f147d2662/-473Wx593H-461866963-blue-MODEL.jpg"/>
+              <Image src= "https://my-live-05.slatic.net/p/3e85123f8cb1bb1a455d0991f9b1c6ce.jpg_720x720q80.jpg_.webp"/>
               <Details>
                 <ProductName><b>Product:</b> CUTE BOY</ProductName>
                 <ProductId><b>ID:</b> #123</ProductId>
@@ -125,8 +173,46 @@ const Cart = () => {
              <ProductPrice>$150</ProductPrice>
             </PriceDetail>
           </Product>
-          </Info>
-          <Summary>summary</Summary>
+          <Hr/>
+          <Product>
+            <ProductDetail>
+              <Image src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqtQAqo8s8Ogr3Y-6HTbrBCkX7d6LMLqWfsR247C1ofk8J9lVOafdZSIZc2ZiASrrw8Fo&usqp=CAU"/>
+              <Details>
+                <ProductName><b>Product:</b> CUTE BOY</ProductName>
+                <ProductId><b>ID:</b> #123</ProductId>
+                <ProductColor color = "darkblue"/>
+              </Details>
+            </ProductDetail>
+            <PriceDetail>
+             <ProductAmountContainer>
+               <Add/>
+               <ProductAmount>2</ProductAmount>
+               <Remove/>
+             </ProductAmountContainer>
+             <ProductPrice>$150</ProductPrice>
+            </PriceDetail>
+          </Product>
+         </Info>
+          <Summary>
+            <SummaryTitle>ORDER SUMMARY</SummaryTitle>
+            <SummaryItem>
+              <SummaryItemText>Subtotal</SummaryItemText>
+              <SummaryItemPrice>$ 60</SummaryItemPrice>
+            </SummaryItem>
+            <SummaryItem>
+              <SummaryItemText>Estimated Shipping</SummaryItemText>
+              <SummaryItemPrice>$ 6.90</SummaryItemPrice>
+            </SummaryItem>
+            <SummaryItem>
+              <SummaryItemText>Shipping Discount</SummaryItemText>
+              <SummaryItemPrice>$ -6.90</SummaryItemPrice>
+            </SummaryItem>
+            <SummaryItem type="total">
+              <SummaryItemText>Total</SummaryItemText>
+              <SummaryItemPrice>$ 60</SummaryItemPrice>
+            </SummaryItem>
+            <Button>CHECKOUT NOW</Button>
+            </Summary>
         </Bottom>
         </Wrapper>
    </div>
